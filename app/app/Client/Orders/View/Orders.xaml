@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="app.app.Client.Orders.View.Orders"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:svg="http://sharpvectors.codeplex.com/svgc/"
+             xmlns:utils="clr-namespace:app.utils"
+             xmlns:local="clr-namespace:app.app.Client.Orders.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Style="{StaticResource Page_Style}"
+             >
+    <UserControl.Resources>
+        <utils:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1.75*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <DockPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Orders" Style="{StaticResource EntryTB}" HorizontalAlignment="Left"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Count}" Style="{StaticResource ParamTB}" Margin="0,10,0,0" Foreground="White"/>
+                            <TextBlock Text=" items" Style="{StaticResource ParamTB}" Margin="0,10,0,0" Foreground="White"/>
+
+                        </StackPanel>
+                    </StackPanel>
+                    <Border Style="{StaticResource ParamBorder}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120">
+                        <StackPanel Orientation="Horizontal">
+                            <PasswordBox Width="75"  Style="{StaticResource ParamBorderPB}" Margin="15, 5, 0, 5" />
+                            <Image Source="{svg:SvgImage ../../../../res/icons/magnifier.svg}" Width="15" Height="15" Stretch="Uniform"/>
+                        </StackPanel>
+                    </Border>
+                </DockPanel>
+            </Grid>
+
+            <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Hidden" VerticalAlignment="Top">
+                <ItemsControl ItemsSource="{Binding Products}" >
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border CornerRadius="10" Background="#9c9c9c" Height="150" Margin="0,0,0,20">
+                                <Grid Margin="15">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60*"/>
+                                        <ColumnDefinition Width="40*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
+                                        <Border CornerRadius="10" Width="150" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" >
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding Laptop.FirstImage}" Stretch="UniformToFill"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <Border CornerRadius="10" Width="150" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding Headphones.FirstImage}" Stretch="UniformToFill"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <Border CornerRadius="10" Width="150" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" >
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding Phone.FirstImage}" Stretch="UniformToFill"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <Border CornerRadius="10" Width="150" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" >
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding SmartWatch.FirstImage}" Stretch="UniformToFill"/>
+                                            </Border.Background>
+                                        </Border>
+
+                                        <StackPanel Margin="10, 0">
+                                            <TextBlock Margin="0" Text="{Binding Laptop.Name}" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            <TextBlock Margin="0" Text="{Binding Headphones.Name}" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            <TextBlock Margin="0" Text="{Binding Phone.Name}" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            <TextBlock Margin="0" Text="{Binding SmartWatch.Name}" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+
+                                            <TextBlock Margin="0" FontSize="15" Text="{Binding Laptop.Model}" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}"  FontWeight="Bold" Foreground="Black"/>
+                                            <TextBlock Margin="0" FontSize="15" Text="{Binding Headphones.Model}" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Bold" Foreground="Black"/>
+                                            <TextBlock Margin="0" FontSize="15" Text="{Binding Phone.Model}" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Bold" Foreground="Black"/>
+                                            <TextBlock Margin="0" FontSize="15" Text="{Binding SmartWatch.Model}" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Bold" Foreground="Black"/>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock HorizontalAlignment="Left" Margin="0" Foreground="Black" Text="{Binding Laptop.Price}" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Medium" />
+                                                <TextBlock HorizontalAlignment="Left" Margin="0" Foreground="Black" Text="{Binding Headphones.Price}" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Medium" />
+                                                <TextBlock HorizontalAlignment="Left" Margin="0" Foreground="Black" Text="{Binding Phone.Price}" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Medium" />
+                                                <TextBlock HorizontalAlignment="Left" Margin="0" Foreground="Black" Text="{Binding SmartWatch.Price}" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" FontWeight="Medium" />
+                                                <TextBlock HorizontalAlignment="Left" Margin="0" Foreground="Black" Text=" BYN" Style="{StaticResource ParamTB}" FontWeight="Medium" />
+
+                                            </StackPanel>
+
+                                            <Grid Margin="0, 35, 0, 5" >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Margin="0" Text="Color" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="0" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Laptop.Color.Value}" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="0" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Headphones.Color.Value}" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="0" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Phone.Color.Value}" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="0" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding SmartWatch.Color.Value}" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Margin="0" Text="Producer" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Laptop.Producer.Name}" Visibility="{Binding LaptopId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Headphones.Producer.Name}" Visibility="{Binding HeadphonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Phone.Producer.Name}" Visibility="{Binding PhonesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding SmartWatch.Producer.Name}" Visibility="{Binding SmartWatchesId, Converter={StaticResource NullToVisibilityConverter}}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            </Grid>
+
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <Grid Grid.Row="1" Grid.Column="1"  >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="5*"/>
+                                            <RowDefinition Height="5*"/>
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock HorizontalAlignment="Right"   Text="{Binding Status}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            <TextBlock HorizontalAlignment="Right"   Text="{Binding Adress}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+                                            <TextBlock HorizontalAlignment="Right"   Text="{Binding Count}" Style="{StaticResource ParamTB}" Foreground="#272B2F"/>
+
+                                        </StackPanel>
+                                        <!--<Border Grid.Row="1" Background="#ED9D2E" CornerRadius="5" Padding="5"  VerticalAlignment="Bottom" HorizontalAlignment="Right" >
+                                            <Button Content="Order" Style="{StaticResource NoHoverButtonStyle}" />
+                                        </Border>-->
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="app.app.Admin.ViewOrder.View.OrderStatus"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:app.app.Admin.ViewOrder.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="2.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" Grid.Column="1" >
+                        <StackPanel Orientation="Vertical" Height="{Binding EmailParamHeight}" >
+                          
+
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="120" Margin="0,0">
+                                <TextBlock Text="Status" Style="{StaticResource ParamTB}" Margin="0, 10"/>
+                                <ComboBox ItemsSource="{Binding StatusList}" SelectedItem="{Binding Status}" Padding="10"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <Border Margin="0,20"   Background="#ED9D2E" CornerRadius="5" Width="70"  HorizontalAlignment="Left" Visibility="{Binding IsVisibleButton}" >
+                                    <Button Content="Edit" Style="{StaticResource NoHoverButtonStyle}" Command="{Binding EditCommand}" Margin="0,10" Cursor="Hand" />
+                                </Border>
+                                <Border Margin="20"   Background="#ED9D2E" CornerRadius="5" Width="70"  HorizontalAlignment="Left" Visibility="{Binding IsVisibleButton}" >
+                                    <Button Content="Back" Style="{StaticResource NoHoverButtonStyle}" Command="{Binding BackCommand}" Margin="0,10" Cursor="Hand" />
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

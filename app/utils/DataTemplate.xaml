@@ -1,0 +1,114 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vmLogIn="clr-namespace:app.app.Login.ViewModel"
+                    xmlns:viewLogIn="clr-namespace:app.app.Login.View"
+                    xmlns:viewAdmin="clr-namespace:app.app.Admin.Main.View"
+                    xmlns:vmAdmin="clr-namespace:app.app.Admin.Main.ViewModel"
+                    xmlns:viewClient="clr-namespace:app.app.Client.Main.View"
+                    xmlns:vmClient="clr-namespace:app.app.Client.Main.ViewModel"
+                    xmlns:vmClientHome="clr-namespace:app.app.Client.Home.ViewModel"
+                    xmlns:viewClientHome="clr-namespace:app.app.Client.Home.View"
+                    xmlns:vmDiag="clr-namespace:app.app.Diag.ViewModel"
+                    xmlns:viewProfile="clr-namespace:app.app.Profile.View"
+                    xmlns:vmProfile="clr-namespace:app.app.Profile.ViewModel"
+                    xmlns:viewCart="clr-namespace:app.app.Client.Cart.View"
+                    xmlns:vmCart="clr-namespace:app.app.Client.Cart.ViewModel"
+                    xmlns:viewOrders="clr-namespace:app.app.Client.Orders.View"
+                    xmlns:vmOrders="clr-namespace:app.app.Client.Orders.ViewModel"
+                    xmlns:viewUsers="clr-namespace:app.app.Admin.Users.View"
+                    xmlns:vmUsers="clr-namespace:app.app.Admin.Users.ViewModel"
+                    xmlns:viewProfilAdminAdmin="clr-namespace:app.app.Admin.ViewAdmin.View"
+                    xmlns:vmProfileAdminAdmin="clr-namespace:app.app.Admin.ViewAdmin.ViewModel"
+                    xmlns:viewProfilClientAdmin="clr-namespace:app.app.Admin.ViewUser.View"
+                    xmlns:vmProfileClientAdmin="clr-namespace:app.app.Admin.ViewUser.ViewModel"
+                    xmlns:viewProducts="clr-namespace:app.app.Client.Products.View"
+                    xmlns:vmProducts="clr-namespace:app.app.Client.Products.ViewModel"
+                    xmlns:viewReviews="clr-namespace:app.app.Admin.Reviews.View"
+                    xmlns:vmReviews="clr-namespace:app.app.Admin.Reviews.ViewModel"  
+                    xmlns:viewReviewView="clr-namespace:app.app.Admin.ViewReview.View"
+                    xmlns:vmReviewsView="clr-namespace:app.app.Admin.ViewReview.ViewModel" 
+                    xmlns:viewOrderView="clr-namespace:app.app.Admin.Orders.View"
+                    xmlns:vmOrderView="clr-namespace:app.app.Admin.Orders.ViewModel"
+                    xmlns:viewOrder="clr-namespace:app.app.Admin.ViewOrder.View"
+                    xmlns:vmOrder="clr-namespace:app.app.Admin.ViewOrder.ViewModel"
+                    xmlns:viewClientMessanger="clr-namespace:app.app.Client.Messanger.View"
+                    xmlns:vmClinetMessanger="clr-namespace:app.app.Client.Messanger.ViewModel" 
+                    xmlns:viewAdminMessangers="clr-namespace:app.app.Admin.Messangers.View"
+                    xmlns:vmAdminMessangers="clr-namespace:app.app.Admin.Messangers.ViewModel" 
+                    xmlns:viewAdminMessanger="clr-namespace:app.app.Admin.Messanger.View"
+                    xmlns:vmAdminMessanger="clr-namespace:app.app.Admin.Messanger.ViewModel"            
+                    >
+    <DataTemplate DataType="{x:Type vmAdminMessanger:MessangerVM}">
+        <viewAdminMessanger:Messanger/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vmAdminMessangers:MessangersVM}">
+        <viewAdminMessangers:Messangers/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vmClinetMessanger:MessangerVM}">
+        <viewClientMessanger:Messanger/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmOrder:OrderStatusVM}">
+        <viewOrder:OrderStatus/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmOrderView:OrdersVM}">
+        <viewOrderView:Orders/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vmReviewsView:ReviewVM}">
+        <viewReviewView:Review />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmReviews:ReviewsVM}">
+        <viewReviews:Reviews />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmLogIn:LogInVM}">
+        <viewLogIn:LogIn />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmAdmin:AdminVM}">
+        <viewAdmin:Main />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmClient:ClientVM}">
+        <viewClient:Main />
+    </DataTemplate>
+
+    
+
+    <DataTemplate DataType="{x:Type vmClientHome:HomeVM}">
+        <viewClientHome:Home />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmProfile:ProfileVM}">
+        <viewProfile:Profile />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmCart:CartVM}">
+        <viewCart:Cart />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmOrders:OrdersVM}">
+        <viewOrders:Orders/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmUsers:UsersVM}">
+        <viewUsers:Users/>
+    </DataTemplate>
+
+
+    <DataTemplate DataType="{x:Type vmProfileAdminAdmin:ProfileAdminVM}">
+        <viewProfilAdminAdmin:Profile />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmProfileClientAdmin:ProfileClientVM}">
+        <viewProfilClientAdmin:Profile />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmProducts:ProductsVM}">
+        <viewProducts:Products/>
+    </DataTemplate>
+
+</ResourceDictionary>

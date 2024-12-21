@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="app.app.Client.Home.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:app.app.Client.Home.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="622"
+             Style="{StaticResource Page_Style}"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1.75*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Home" Style="{StaticResource EntryTB}" HorizontalAlignment="Left"/>
+
+        <Grid Grid.Row="2" Grid.Column="1" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5.5*"/>
+                <ColumnDefinition Width="0.7*"/>
+                <ColumnDefinition Width="3.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Foreground="white" Text="Popular" FontSize="20" />
+            <Border Background="#5bb1dc" Grid.Row="2" Grid.Column="0" CornerRadius="10">
+
+            </Border>
+            <Border Background="#fcb045" Grid.Row="2" Grid.Column="3" CornerRadius="10">
+
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Products" Foreground="White" FontSize="20"/>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Border Background="#833ab4" CornerRadius="10">
+                    <Image Source="../../../../res/images/smartwatch2.jpg" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <RectangleGeometry Rect="0,0,119,121" RadiusX="10" RadiusY="10"/>
+                        </Image.Clip>
+                    </Image>
+                </Border>
+                <Border>
+                    <Button Background="Transparent" Cursor="Hand" Command="{Binding CatalogSmartWacthesCommand}"  Style="{StaticResource NoHoverButtonStyle}"/>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="2">
+                <Border Background="#c52a62" CornerRadius="10">
+                    <Image Source="../../../../res/images/headphones3.jpg" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <RectangleGeometry Rect="0,0,119,121" RadiusX="10" RadiusY="10"/>
+                        </Image.Clip>
+                    </Image>
+                </Border>
+                <Border>
+                    <Button Background="Transparent" Cursor="Hand" Command="{Binding CatalogHeadphonesCommand}" Style="{StaticResource NoHoverButtonStyle}"/>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="4">
+                <Border Background="#f5f22d" CornerRadius="10">
+                    <Image Source="../../../../res/images/phone2.jpg" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <RectangleGeometry Rect="0,0,119,121" RadiusX="10" RadiusY="10"/>
+                        </Image.Clip>
+                    </Image>
+                </Border>
+                <Border>
+                    <Button Background="Transparent" Cursor="Hand" Command="{Binding CatalogPhoneCommand}"  Style="{StaticResource NoHoverButtonStyle}"/>
+                </Border>
+            </Grid>
+            <Grid  Grid.Row="2" Grid.Column="6">
+                <Border Background="#44d978" CornerRadius="10">
+                    <Image Source="../../../../res/images/laptop3.jpg" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <RectangleGeometry Rect="0,0,119,121" RadiusX="10" RadiusY="10"/>
+                        </Image.Clip>
+                    </Image>
+                </Border>
+                <Border>
+                    <Button Background="Transparent" Cursor="Hand" Command="{Binding CatalogLaptopCommand}"  Style="{StaticResource NoHoverButtonStyle}"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

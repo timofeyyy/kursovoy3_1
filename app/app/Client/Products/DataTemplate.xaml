@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vmLaptomItem="clr-namespace:app.app.Client.Products.Laptop.ViewModel"             
+                    xmlns:vLaptomItem="clr-namespace:app.app.Client.Products.Laptop.View"  
+                    xmlns:vmPhoneItem="clr-namespace:app.app.Client.Products.Phone.ViewModel"             
+                    xmlns:vPhoneItem="clr-namespace:app.app.Client.Products.Phone.View" 
+                    xmlns:vmHeadphonesItem="clr-namespace:app.app.Client.Products.Headphones.ViewModel"             
+                    xmlns:vHeadphonesItem="clr-namespace:app.app.Client.Products.Headphones.View"  
+                    xmlns:vmSmartWatchesItem="clr-namespace:app.app.Client.Products.SmartWatches.ViewModel"             
+                    xmlns:vSmartWatchesItem="clr-namespace:app.app.Client.Products.SmartWatches.View"  
+                    >
+
+    <DataTemplate DataType="{x:Type vmLaptomItem:LaptopVM}">
+        <vLaptomItem:Laptop/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmPhoneItem:PhoneVM}">
+        <vPhoneItem:Phone/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vmHeadphonesItem:HeadphonesVM}">
+        <vHeadphonesItem:Headphones/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vmSmartWatchesItem:SmartWatchesVM}">
+        <vSmartWatchesItem:SmartWatches/>
+    </DataTemplate>
+
+</ResourceDictionary>

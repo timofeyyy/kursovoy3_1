@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vFirst="clr-namespace:app.app.Admin.Products.SmartWatches.Add.First.View"
+                    xmlns:vmFirst="clr-namespace:app.app.Admin.Products.SmartWatches.Add.First.ViewModel"
+                    xmlns:vSecond="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Second.View"
+                    xmlns:vmSecond="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Second.ViewModel"
+                    xmlns:vThird="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Third.View"
+                    xmlns:vmThird="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Third.ViewModel"
+                    xmlns:vFourth="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Fourth.View"
+                    xmlns:vmFourth="clr-namespace:app.app.Admin.Products.SmartWatches.Add.Fourth.ViewModel"
+                    xmlns:viewTable="clr-namespace:app.app.Admin.Products.SmartWatches.Table.View"
+                    xmlns:vmTable="clr-namespace:app.app.Admin.Products.SmartWatches.Table.ViewModel"
+                    >
+                    <DataTemplate DataType="{x:Type vmTable:TableVM}">
+                        <viewTable:Table/>
+                    </DataTemplate> 
+                    <DataTemplate DataType="{x:Type vmFirst:FirstVM}">
+                        <vFirst:First/>
+                    </DataTemplate> 
+                    <DataTemplate DataType="{x:Type vmSecond:SecondVM}">
+                        <vSecond:Second/>
+                        </DataTemplate>
+                    <DataTemplate DataType="{x:Type vmThird:ThirdVM}">
+                        <vThird:Third/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vmFourth:FourthVM}">
+                        <vFourth:Fourth/>
+                    </DataTemplate> 
+    
+</ResourceDictionary>
