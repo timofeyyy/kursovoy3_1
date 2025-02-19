@@ -1,0 +1,223 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="res\fonts\ofont.ru_Nunito.ttf" />
+    <None Remove="res\icons\add.svg" />
+    <None Remove="res\icons\bag.svg" />
+    <None Remove="res\icons\bin.svg" />
+    <None Remove="res\icons\cart.svg" />
+    <None Remove="res\icons\close-def.png" />
+    <None Remove="res\icons\close-mo.png" />
+    <None Remove="res\icons\close.svg" />
+    <None Remove="res\icons\dash.svg" />
+    <None Remove="res\icons\edit.svg" />
+    <None Remove="res\icons\favorite.svg" />
+    <None Remove="res\icons\headphones.svg" />
+    <None Remove="res\icons\home.svg" />
+    <None Remove="res\icons\laptop.svg" />
+    <None Remove="res\icons\left.svg" />
+    <None Remove="res\icons\log-out.svg" />
+    <None Remove="res\icons\magnifier.svg" />
+    <None Remove="res\icons\minus.svg" />
+    <None Remove="res\icons\phone.svg" />
+    <None Remove="res\icons\plus.svg" />
+    <None Remove="res\icons\profile.svg" />
+    <None Remove="res\icons\profile1.svg" />
+    <None Remove="res\icons\review.svg" />
+    <None Remove="res\icons\right.svg" />
+    <None Remove="res\icons\selected-star.svg" />
+    <None Remove="res\icons\send.svg" />
+    <None Remove="res\icons\shutdown_def.png" />
+    <None Remove="res\icons\shutdown_mo.png" />
+    <None Remove="res\icons\smartwatch.svg" />
+    <None Remove="res\icons\support.svg" />
+    <None Remove="res\icons\table.svg" />
+    <None Remove="res\icons\unselected-star.svg" />
+    <None Remove="res\icons\user.svg" />
+    <None Remove="res\icons\users.svg" />
+    <None Remove="res\images\bg.jpg" />
+    <None Remove="res\images\bg1.jpg" />
+    <None Remove="res\images\default-icon.jpg" />
+    <None Remove="res\images\headphones.jpg" />
+    <None Remove="res\images\headphones1.jpg" />
+    <None Remove="res\images\headphones2.jpg" />
+    <None Remove="res\images\headphones21.jpg" />
+    <None Remove="res\images\headphones3.jpg" />
+    <None Remove="res\images\laptop.jpg" />
+    <None Remove="res\images\laptop2.jpg" />
+    <None Remove="res\images\laptop3.jpg" />
+    <None Remove="res\images\phone.jpg" />
+    <None Remove="res\images\phone1.jpg" />
+    <None Remove="res\images\phone2.jpg" />
+    <None Remove="res\images\smartwatch.jpg" />
+    <None Remove="res\images\smartwatch1.jpg" />
+    <None Remove="res\images\smartwatch2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\icons\add.svg" />
+    <Resource Include="res\icons\bin.svg" />
+    <Resource Include="res\icons\edit.svg" />
+    <Resource Include="res\icons\favorite.svg" />
+    <Resource Include="res\icons\left.svg" />
+    <Resource Include="res\icons\review.svg" />
+    <Resource Include="res\icons\right.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="res\icons\selected-star.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="res\icons\send.svg" />
+    <Resource Include="res\icons\table.svg" />
+    <Resource Include="res\icons\unselected-star.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="res\icons\user.svg" />
+    <Resource Include="res\images\laptop3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.Wpf.TaskbarNotification" Version="1.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SharpVectors" Version="1.8.4.2" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\fonts\ofont.ru_Nunito.ttf" />
+    <Resource Include="res\icons\bag.svg" />
+    <Resource Include="res\icons\cart.svg" />
+    <Resource Include="res\icons\close-def.png" />
+    <Resource Include="res\icons\close-mo.png" />
+    <Resource Include="res\icons\close.svg" />
+    <Resource Include="res\icons\dash.svg" />
+    <Resource Include="res\icons\headphones.svg" />
+    <Resource Include="res\icons\home.svg" />
+    <Resource Include="res\icons\laptop.svg" />
+    <Resource Include="res\icons\log-out.svg" />
+    <Resource Include="res\icons\magnifier.svg" />
+    <Resource Include="res\icons\minus.svg" />
+    <Resource Include="res\icons\phone.svg" />
+    <Resource Include="res\icons\plus.svg" />
+    <Resource Include="res\icons\profile.svg" />
+    <Resource Include="res\icons\shutdown_def.png" />
+    <Resource Include="res\icons\shutdown_mo.png" />
+    <Resource Include="res\icons\smartwatch.svg" />
+    <Resource Include="res\icons\support.svg" />
+    <Resource Include="res\icons\users.svg" />
+    <Resource Include="res\images\bg.jpg" />
+    <Resource Include="res\images\bg1.jpg" />
+    <Resource Include="res\images\default-icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="res\images\headphones.jpg" />
+    <Resource Include="res\images\headphones1.jpg" />
+    <Resource Include="res\images\headphones2.jpg" />
+    <Resource Include="res\images\headphones21.jpg" />
+    <Resource Include="res\images\headphones3.jpg" />
+    <Resource Include="res\images\laptop.jpg" />
+    <Resource Include="res\images\laptop2.jpg" />
+    <Resource Include="res\images\phone.jpg" />
+    <Resource Include="res\images\phone1.jpg" />
+    <Resource Include="res\images\phone2.jpg" />
+    <Resource Include="res\images\smartwatch.jpg" />
+    <Resource Include="res\images\smartwatch1.jpg" />
+    <Resource Include="res\images\smartwatch2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="app\Admin\Messanger\View\Messanger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Headphones\Add\First\View\First.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Headphones\Add\Fourth\View\Fourth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Headphones\Add\Second\View\Second.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Headphones\Add\Third\View\Third.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Headphones\Table\View\Table.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\SmartWatches\Add\First\View\First.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\SmartWatches\Add\Fourth\View\Fourth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\SmartWatches\Add\Second\View\Second.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\SmartWatches\Add\Third\View\Third.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\SmartWatches\Table\View\Table.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Phone\Add\First\View\First.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Phone\Add\Fourth\View\Fourth.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Phone\Add\Second\View\Second.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Phone\Add\Third\View\Third.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Products\Phone\Table\View\Table.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\Reviews\View\Reviews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\ViewReview\View\Review.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Client\Products\SmartWatches\View\SmartWatches.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Client\Products\Headphones\View\Headphones.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Client\Products\Phone\View\Phone.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Client\Products\Laptop\View\Laptop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Client\Products\View\Products.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\ViewAdmin\View\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="app\Admin\ViewUser\View\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

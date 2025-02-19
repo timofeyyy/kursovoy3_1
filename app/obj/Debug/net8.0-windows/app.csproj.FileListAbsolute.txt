@@ -1,0 +1,8 @@
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\app.csproj.AssemblyReference.cache
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\App\Admin\Main\View\Main.g.cs
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\App\LogIn\View\LogIn.g.cs
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\App\Main\View\MainWindow.g.cs
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\App.g.cs
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\app_MarkupCompile.cache
+D:\курсовой_3_1\app\obj\Debug\net8.0-windows\app_MarkupCompile.lref

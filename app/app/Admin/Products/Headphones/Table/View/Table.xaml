@@ -1,0 +1,176 @@
+﻿<UserControl x:Class="app.app.Admin.Products.Headphones.Table.View.Table"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:app.app.Admin.Products.Headphones.Table.View"
+             xmlns:svg="http://sharpvectors.codeplex.com/svgc/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="11*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1.75*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Phones" Style="{StaticResource EntryTB}" HorizontalAlignment="Left"/>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <DockPanel>
+                    
+                    <Border Style="{StaticResource ParamBorder}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Margin="0,3,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Width="75"  Style="{StaticResource ParamBorderTB}" Margin="15, 5, 0, 5" Text="{Binding SearchValue}" />
+                            <Grid Width="15" Height="15">
+                                <Border>
+                                    <Image Source="{svg:SvgImage ../../../../res/icons/magnifier.svg}"  Stretch="Uniform" />
+                                </Border>
+                                <Border Width="15" Height="15">
+                                    <Button Style="{StaticResource NoHoverButtonStyle}" Cursor="Hand" Width="15" Height="15" Margin="0" Command="{Binding FindCommand}"/>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </DockPanel>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Border CornerRadius="20" Margin="0,20,0,0"  Background="White"  BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel Orientation="Vertical">
+                        <Border Background="#ED9D2E" Height="80" CornerRadius="20" BorderThickness="0" BorderBrush="Transparent">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <TextBlock Text="Id" Style="{StaticResource ParamTB}" />
+                                    <TextBlock Text="Producer" Style="{StaticResource ParamTB}" Margin="50,0,0,0"/>
+                                    <TextBlock Text="Model" Style="{StaticResource ParamTB}" Margin="50,0,0,0"/>
+                                    <TextBlock Text="Price" Style="{StaticResource ParamTB}" Margin="50,0,0,0"/>
+                                    <TextBlock Text="Color" Style="{StaticResource ParamTB}" Margin="50,0,0,0"/>
+                                    <TextBlock Text="Stock" Style="{StaticResource ParamTB}" Margin="50,0,0,0"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="1" Background="White"/>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </Border>
+                <Border Margin="0,60,0,0">
+                    <DataGrid 
+                         ItemsSource="{Binding Products}"
+                         AutoGenerateColumns="False"
+                         Background="Transparent"
+                         GridLinesVisibility="None" 
+                         HorizontalAlignment="Stretch"
+                         HeadersVisibility="Column"
+                         HorizontalGridLinesBrush="Transparent" 
+                         VerticalGridLinesBrush="Transparent"
+                         BorderThickness="0"
+                         CanUserAddRows="False"
+                         >
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="BorderThickness" Value="0" />
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Padding" Value="5" />
+                            </Style>
+                        </DataGrid.CellStyle>
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="Foreground" Value="Black" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                <Setter Property="VerticalContentAlignment" Value="Center" />
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn  >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="70" >
+                                            <TextBlock Background="Transparent" Text="{Binding Id}" Style="{StaticResource Value}" Foreground="Black" VerticalAlignment="Center" Margin="15,0,0,0" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="100" HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding Producer.Name}" Style="{StaticResource Value}" Foreground="Black" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="90" HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding Model}" Style="{StaticResource Value}" Foreground="Black" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="60"  HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding Price}" Style="{StaticResource Value}" Foreground="Black" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="90"  HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding Color.Value}" Style="{StaticResource Value}" Foreground="Black" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="40"  HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding Stock}" Style="{StaticResource Value}" Foreground="Black" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel  HorizontalAlignment="Center" Orientation="Horizontal">
+                                            <Button PreviewMouseDown="Update" Focusable="False" Style="{StaticResource NoHoverButtonStyle}" Width="15" Height="15" Margin="5,0"  Command="{Binding RemoveCommand}" CommandParameter="{Binding}">
+                                                <Image Source="{svg:SvgImage ../../../../../../res/icons/edit.svg}"/>
+                                            </Button>
+                                            <Button PreviewMouseDown="Remove" Focusable="False" Style="{StaticResource NoHoverButtonStyle}" Width="15" Height="15" Margin="5,0" Command="{Binding EditCommand}" CommandParameter="{Binding}">
+                                                <Image Source="{svg:SvgImage ../../../../../../res/icons/bin.svg}"/>
+                                            </Button>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

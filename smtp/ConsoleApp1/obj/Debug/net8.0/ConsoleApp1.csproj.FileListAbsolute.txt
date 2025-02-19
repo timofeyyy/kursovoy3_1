@@ -1,0 +1,30 @@
+D:\курсовой_3_1\Новая папка\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+D:\курсовой_3_1\Новая папка\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
+D:\курсовой_3_1\Новая папка\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+D:\курсовой_3_1\Новая папка\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
+D:\курсовой_3_1\Новая папка\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.sourcelink.json
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+D:\курсовой_3_1\Новая папка\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+D:\курсовой_3_1\smtp\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+D:\курсовой_3_1\smtp\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
+D:\курсовой_3_1\smtp\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+D:\курсовой_3_1\smtp\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
+D:\курсовой_3_1\smtp\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.sourcelink.json
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+D:\курсовой_3_1\smtp\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll

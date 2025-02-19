@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
+  <Class Name="app.db.Entities.Cart" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAABAAAAgAQAAgAQAAgAAAAAAAAAAAAAIAAIAAA=</HashCode>
+      <FileName>db\Entities\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Chat" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAEAAAAAAAAAAAAQgAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>db\Entities\Chat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Color" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAAABAAAAAAAAAAgIAAIAAA=</HashCode>
+      <FileName>db\Entities\Color.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Messanger" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAAAQ=</HashCode>
+      <FileName>db\Entities\Messanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Orders" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAFAAAAgAQAAgAQAAwAAAgAAAAAAAAAIAAIAAA=</HashCode>
+      <FileName>db\Entities\Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Producer" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAQABAAAAAAAAAAAIAAIAAA=</HashCode>
+      <FileName>db\Entities\Producer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Reviews" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEADAAABAAAAgAYAAgAQAAgAAAAAAAAAAAAAIAAIAAA=</HashCode>
+      <FileName>db\Entities\Reviews.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.User" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAAACACAAAgAAAAAAAACAQAAAACAAAQCAAAAAA=</HashCode>
+      <FileName>db\Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Headphones.Headphones" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEKCEAAAYABGAAAAAAAAAQAgAAQAAAAAAgAgAAAACA=</HashCode>
+      <FileName>db\Entities\Headphones\Headphones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Headphones.HeadphonesImages" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>db\Entities\Headphones\HeadphonesImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Laptop.Laptop" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAmKCEAARYABGAAYAAAAAkQAgAAQAAAAAAgAgAAEAAE=</HashCode>
+      <FileName>db\Entities\Laptop\Laptop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Laptop.LaptopImages" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>db\Entities\Laptop\LaptopImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Laptop.VideoCard.VideoCardBrand" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>db\Entities\Laptop\VideoCard\VideoCardBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Laptop.VideoCard.VideoCardModel" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAIAAARAAA=</HashCode>
+      <FileName>db\Entities\Laptop\VideoCard\VideoCardModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.OS.OS" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAIAAAAAAABAAAAAAAAAAAIAARAAA=</HashCode>
+      <FileName>db\Entities\OS\OS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.OS.OSBrand" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAE=</HashCode>
+      <FileName>db\Entities\OS\OSBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Phone.Phone" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGqCEAABYAJGAAQAAAAAEQAggAQAAAAAAgAgABEAAE=</HashCode>
+      <FileName>db\Entities\Phone\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Phone.PhoneImages" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>db\Entities\Phone\PhoneImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Processor.ProcessorBrand" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>db\Entities\Processor\ProcessorBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.Processor.ProcessorModel" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAJIAARAAA=</HashCode>
+      <FileName>db\Entities\Processor\ProcessorModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.SmartWatches.SmartWatch" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEKCEAABYABGAAQAAAAAEwAgAAQAAAAAAiAgAEIAAE=</HashCode>
+      <FileName>db\Entities\SmartWatches\SmartWatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="app.db.Entities.SmartWatches.SmartWatchImages" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>db\Entities\SmartWatches\SmartWatchImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
